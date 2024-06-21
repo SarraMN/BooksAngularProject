@@ -1,7 +1,12 @@
 # BooksFinalFront
+This project is simple UI was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.3.
+## Features
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.3.
-
+- Add new book
+- Delete a book with confirmer modal
+- Update book
+- List the books in a table
+- toaster displayed when adding, and updating a book
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
