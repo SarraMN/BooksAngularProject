@@ -1,0 +1,11 @@
+
+<div *ngIf="book" class="container mt-5">
+  <h1>{{ book.title }}</h1>
+  <p><strong>Author:</strong> {{ book.author }}</p>
+  <p><strong>Published Date:</strong> {{ book.publishedDate | date }}</p>
+  <p><strong>ISBN:</strong> {{ book.isbn }}</p>
+  <p><strong>Summary:</strong> {{ book.summary }}</p>
+  <a class="btn btn-primary" [routerLink]="['/edit', book.id]">Edit</a>
+  <a class="btn btn-secondary" routerLink="/books">Back to List</a>
+</div>
+  

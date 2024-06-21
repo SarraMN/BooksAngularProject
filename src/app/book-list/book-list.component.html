@@ -1,0 +1,30 @@
+<div class="container mt-5">
+    <h1>Books List</h1>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Author</th>
+          <th>Published Date</th>
+          <th>ISBN</th>
+          <th>Summary</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let book of books">
+          <td>{{ book.title }}</td>
+          <td>{{ book.author }}</td>
+          <td>{{ book.publishedDate | date }}</td>
+          <td>{{ book.isbn }}</td>
+          <td>{{ book.summary }}</td>
+          <td style="display: flex; gap: 5px;">
+            <button class="btn btn-primary" [routerLink]="['/edit', book.id]">Edit</button>
+            <button class="btn btn-danger" (click)="book.id !== undefined ? deleteBook(book.id) : null">Delete</button> 
+          </td>
+        </tr>
+      </tbody>
+    </table>
+   <a class="btn btn-success" routerLink="/add">Add New Book</a> 
+  </div>
+  
