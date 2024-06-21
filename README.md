@@ -3,10 +3,13 @@ This project is simple UI was generated with [Angular CLI](https://github.com/an
 ## Features
 
 - Add new book
-- Delete a book with confirmer modal
+- Delete a book with a confirmer dialog
 - Update book
 - List the books in a table
 - toaster displayed when adding, and updating a book
+## Back end 
+- You can find the backend of this application in this repository (https://github.com/SarraMN/BooksNodeJs)
+- Backend is with Nest js 
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
